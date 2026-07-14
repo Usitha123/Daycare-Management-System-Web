@@ -16,6 +16,7 @@ import {
   TrendingUp,
   Users,
   DollarSign,
+  BarChart3,
 } from "lucide-react";
 
 interface SidebarProps {
@@ -38,6 +39,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     { href: "/admindashboard/invoices", label: "Invoices", icon: FileText },
     { href: "/admindashboard/payments", label: "Payments", icon: CreditCard },
     { href: "/admindashboard/profit-analysis", label: "Profit Analysis", icon: TrendingUp },
+    { href: "/admindashboard/decision-models", label: "Decision Models", icon: BarChart3 },
   ];
 
   const bottomMenuItems = [

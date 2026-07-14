@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, Baby, Users, FileText, Settings, X, TrendingUp } from "lucide-react";
+import { LayoutDashboard, Baby, Users, FileText, Settings, X, TrendingUp, BarChart3 } from "lucide-react";
 
 interface SidebarProps { isOpen: boolean; onClose: () => void; }
 
@@ -15,6 +15,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     { href: "/managerdashboard/staff", label: "Staff", icon: Users },
     { href: "/managerdashboard/reports", label: "Reports", icon: FileText },
     { href: "/managerdashboard/profit-analysis", label: "Profit Analysis", icon: TrendingUp },
+    { href: "/managerdashboard/decision-models", label: "Decision Models", icon: BarChart3 },
   ];
   const bottomItems = [{ href: "/managerdashboard/settings", label: "Settings", icon: Settings }];
 
